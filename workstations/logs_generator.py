@@ -23,3 +23,7 @@ data=str(hostName)+'\t'+str(today)+'\t' +str(r_percentFree) +'\t'+ str(r_ramPerc
 textfile= open("\\\\izenggs1\\Documentation Library\\Sistemas\\Checkbox\\data.txt", "a")
 textfile.write(data)
 textfile.close()
+
+bat_file_path_28= r"C:\Users\Joel\Desktop\Developments\logs_generator\Workstations"
+if r_daysUp >= 9:
+    subprocess.run(bat_file_path_28)
